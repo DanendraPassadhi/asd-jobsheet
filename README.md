@@ -1,6 +1,6 @@
 <h1 align="center"> Algoritma dan Struktur Data <br> Jobsheet</h1>
 
-<p align="center">Repository ini berisi kumpulan tugas dan proyek yang saya kerjakan untuk mata kuliah Algoritma dan Struktur Data. Mata kuliah ini memberikan pemahaman mendalam tentang konsep-konsep fundamental dalam ilmu komputer terkait efisiensi, optimasi, dan organisasi data.</p>
+<p align="center">Repository ini berisi kumpulan tugas dan proyek yang saya kerjakan untuk mata kuliah Algoritma dan Struktur Data pada Semester 2. Mata kuliah ini memberikan pemahaman mendalam tentang konsep-konsep fundamental dalam ilmu komputer terkait efisiensi, optimasi, dan organisasi data.</p>
 
 <br>
 
