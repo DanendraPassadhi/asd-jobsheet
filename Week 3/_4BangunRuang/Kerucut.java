@@ -4,7 +4,6 @@ public class Kerucut {
     public double jariJari;
     public double sisiMiring;
     public double phi = 3.14;
-    public double tinggi = 3;
 
     public Kerucut(double r, double sm) {
         jariJari = r;
@@ -16,6 +15,6 @@ public class Kerucut {
     }
 
     public double hitungVolume() {
-        return (phi * jariJari * jariJari * tinggi) / 3;
+        return (phi * jariJari * jariJari * Math.sqrt((sisiMiring * sisiMiring) - (jariJari * jariJari))) / 3;
     }
 }
