@@ -12,5 +12,13 @@ public class infoMhs {
         this.kelamin = kelamin;
         this.ipk = ipk;
     }
+
+    public void tampilMhs() {
+        System.out.println("Nama: " + nama);
+        System.out.println("NIM: " + nim);
+        System.out.println("Kelamin: " + (kelamin == 'L' ? "Laki-laki" : "Perempuan"));
+        System.out.println("IPK: " + ipk);
+        System.out.println(); 
+    }
 }
 

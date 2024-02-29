@@ -6,9 +6,6 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         infoMhs[] ArrayMhs = new infoMhs[3];
-
-        for (int i = 0; i < ArrayMhs.length; i++) {
-        }
         
         for (int i = 0; i < ArrayMhs.length; i++) {
             System.out.println("Masukkan data mahasiswa ke-" + (i+1));
@@ -23,6 +20,11 @@ public class Main {
             input.nextLine();
             
             ArrayMhs[i] = new infoMhs(nama, nim, kelamin, ipk);
-        }        
+        }
+        System.out.println();
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Data mahasiswa ke-" + (i+1));
+            ArrayMhs[i].tampilMhs();
+        }
     }
 }
