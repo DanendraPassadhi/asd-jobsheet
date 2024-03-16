@@ -8,6 +8,10 @@ public class Pangkat {
         this.pangkat = pangkat;
     }
 
+    int inputPangkatDC() {
+        return pangkatDC(pangkat, nilai);
+    }
+
     int pangkatBF(int a, int n) {
         int hasil = 1;
         for (int i = 0; i < n; i++) {
