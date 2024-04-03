@@ -27,9 +27,6 @@ public class BukuMain06 {
             data.tambah(m);
         }
         System.out.println("------------------------------------------------------");
-        System.out.println("Data keseluruhan Mahasiswa : ");
-
-        System.out.println("------------------------------------------------------");
         System.out.println("Data keseluruhan Buku : ");
         data.tampil();
 
@@ -42,5 +39,6 @@ public class BukuMain06 {
         System.out.println("menggunakan sequential search");
         int posisi = data.FindSeqSearch(cari);
         data.TampilPosisi(cari, posisi);
+        data.TampilData(cari, posisi);
     }
 }
