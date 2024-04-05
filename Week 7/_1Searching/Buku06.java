@@ -1,3 +1,4 @@
+package _1Searching;
 public class Buku06 {
     int kodeBuku;
     String judulBuku;

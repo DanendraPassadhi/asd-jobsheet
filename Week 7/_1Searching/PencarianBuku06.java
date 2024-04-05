@@ -1,3 +1,4 @@
+package _1Searching;
 public class PencarianBuku06 {
     Buku06 listBk[] = new Buku06[5];
     int idx;

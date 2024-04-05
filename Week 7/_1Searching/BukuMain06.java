@@ -1,3 +1,4 @@
+package _1Searching;
 import java.util.Scanner;
 
 public class BukuMain06 {
