@@ -18,10 +18,10 @@ public class PencarianBuku06 {
         }
     }
 
-    public int FindSeqSearch(int cari) {
+    public int FindSeqSearch(String cari) {
         int posisi = -1;
         for (int j = 0; j < listBk.length; j++) {
-            if (listBk[j].kodeBuku == cari) {
+            if (listBk[j].kodeBuku.equals(cari)) {
                 posisi = j;
                 break;
             }
@@ -29,7 +29,7 @@ public class PencarianBuku06 {
         return posisi;
     }
 
-    public void TampilPosisi(int x, int pos) {
+    public void TampilPosisi(String x, int pos) {
         if (pos != -1) {
             System.out.println("data : " + x + " ditemukan pada indeks : " + pos);
         } else {
@@ -37,7 +37,7 @@ public class PencarianBuku06 {
         }
     }
 
-    public void TampilData(int x, int pos) {
+    public void TampilData(String x, int pos) {
         if (pos != -1) {
             System.out.println("Kode Buku\t : " + x);
             System.out.println("Judul\t : " + listBk[pos].judulBuku);
@@ -49,22 +49,22 @@ public class PencarianBuku06 {
         }
     }
 
-    public Buku06 FindBuku(int cari) {
+    public Buku06 FindBuku(String cari) {
         for (int i = 0; i < listBk.length; i++) {
-            if (listBk[i].kodeBuku == cari) {
+            if (listBk[i].kodeBuku.equals(cari)) {
                 return listBk[i];
             }
         }
         return null;
     }
 
-    public int FindBinarySearch(int cari, int left, int right) {
+    public int FindBinarySearch(String cari, int left, int right) {
         int mid;
         if (right >= left) {
             mid = (right + left) / 2;
-            if (cari == listBk[mid].kodeBuku) {
+            if (listBk[mid].kodeBuku.equals(cari)) {
                 return (mid);
-            } else if (listBk[mid].kodeBuku < cari) {
+            } else if (listBk[mid].kodeBuku.compareTo(cari) < 0) {
                 return FindBinarySearch(cari, left, mid - 1);
             } else {
                 return FindBinarySearch(cari, mid + 1, right);

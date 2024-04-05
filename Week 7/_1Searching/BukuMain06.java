@@ -1,4 +1,5 @@
 package _1Searching;
+
 import java.util.Scanner;
 
 public class BukuMain06 {
@@ -14,7 +15,7 @@ public class BukuMain06 {
         for (int i = 0; i < jumBuku; i++) {
             System.out.println("------------------");
             System.out.print("Kode Buku \t: ");
-            int kodeBuku = s.nextInt();
+            String kodeBuku = s.nextLine();
             System.out.print("Judul Buku \t: ");
             String judulBuku = s1.nextLine();
             System.out.print("Tahun Terbit \t: ");
@@ -23,6 +24,7 @@ public class BukuMain06 {
             String pengarang = s1.nextLine();
             System.out.print("Stock \t\t: ");
             int stock = s.nextInt();
+            s.nextLine();
 
             Buku06 m = new Buku06(kodeBuku, judulBuku, tahunTerbit, pengarang, stock);
             data.tambah(m);
@@ -36,7 +38,7 @@ public class BukuMain06 {
         System.out.println("Pencarian Data : ");
         System.out.println("Masukkan kode buku yang dicari : ");
         System.out.print("Kode buku : ");
-        int cari = s.nextInt();
+        String cari = s.nextLine();
         System.out.println("menggunakan sequential search");
         int posisi = data.FindSeqSearch(cari);
         data.TampilPosisi(cari, posisi);
