@@ -72,4 +72,53 @@ public class PencarianBuku06 {
         }
         return -1;
     }
+
+    public void Sort() {
+        for (int i = 0; i < listBk.length - 1; i++) {
+            for (int j = 0; j < listBk.length - i - 1; j++) {
+                if (listBk[j].judulBuku.compareTo(listBk[j + 1].judulBuku) > 0) {
+                    Buku06 temp = listBk[j];
+                    listBk[j] = listBk[j + 1];
+                    listBk[j + 1] = temp;
+                }
+            }
+        }
+    }
+
+    public int SequentialSearchByTitle(String cari) {
+        for (int i = 0; i < listBk.length; i++) {
+            if (listBk[i].judulBuku.equalsIgnoreCase(cari)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+    
+    public int BinarySearchByTitle(String cari, int left, int right) {
+        Sort();
+        int mid;
+        while (left <= right) {
+            mid = left + (right - left) / 2;
+            if (listBk[mid].judulBuku.equalsIgnoreCase(cari)) {
+                return mid;
+            }
+
+            if (listBk[mid].judulBuku.compareTo(cari) < 0) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+        return -1;
+    }
+
+    public int hitungJudul(String judul) {
+        int hitung = 0;
+        for (int i = 0; i < listBk.length; i++) {
+            if (listBk[i].judulBuku.equalsIgnoreCase(judul)) {
+                hitung++;
+            }
+        }
+        return hitung;
+    }
 }
