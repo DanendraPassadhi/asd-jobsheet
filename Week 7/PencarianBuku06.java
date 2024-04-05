@@ -63,10 +63,10 @@ public class PencarianBuku06 {
             mid = (right + left) / 2;
             if (cari == listBk[mid].kodeBuku) {
                 return (mid);
-            } else if (listBk[mid].kodeBuku > cari) {
-                return FindBinarySearch(cari, left, mid);
+            } else if (listBk[mid].kodeBuku < cari) {
+                return FindBinarySearch(cari, left, mid - 1);
             } else {
-                return FindBinarySearch(cari, mid, right);
+                return FindBinarySearch(cari, mid + 1, right);
             }
         }
         return -1;
