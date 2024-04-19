@@ -52,6 +52,7 @@ class Gudang06 {
             Barang06 delete = tumpukan[top];
             top--;
             System.out.println("Barang " + delete.nama + " diambil dari Gudang.");
+            return delete;
         } else {
             System.out.println("Tumpukan barang kosong.");
             return null;
@@ -59,7 +60,7 @@ class Gudang06 {
     }
 
     Barang06 lihatBarangTeratas() {
-        if (!isEmpty()) {
+        if (!cekKosong()) {
             Barang06 barangTeratas = tumpukan[top];
             System.out.println("Barang teratas : " + barangTeratas.nama);
             return barangTeratas;
@@ -72,12 +73,12 @@ class Gudang06 {
     public void tampilkanBarang() {
         if (!cekKosong()) {
             System.out.println("Rincian tumpukan barang di Gudang: ");
-            // for(int i = top; i >= 0;i--)
-            for (int i = 0; i <= top; i++) {
+            // for(int i = 0; i <= top;i++)
+            for (int i = top; i >= 0; i--) {
                 System.out.printf("Kode %d: %s (Kategori %s)\n", tumpukan[i].kode, tumpukan[i].nama, tumpukan[i].kategori);
-            } else {
+            } 
+        } else {
                 System.out.println("Tumpukan baranng kosong.");
-            }
         }
     }
 }
