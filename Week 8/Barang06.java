@@ -108,4 +108,15 @@ class Gudang06 {
             return null;
         }
     }
+
+    public int cariBarang(String cari) {
+        for (int i = 0; i <= top; i++) {
+            if (tumpukan[i].nama.equalsIgnoreCase(cari)) {
+                System.out.printf("Barang %s terdapat pada posisi ke %d dalam tumpukan\n", tumpukan[i].nama, i + 1);
+                return i;
+            }
+        }
+        System.out.println("Barang tidak ditemukan dalam tumpukan");
+        return -1;
+    }
 }
