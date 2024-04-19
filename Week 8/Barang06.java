@@ -97,4 +97,15 @@ class Gudang06 {
         }
         return biner;
     }
+
+    Barang06 lihatBarangTerbawah() {
+        if (!cekKosong()) {
+            Barang06 barangTerbawah = tumpukan[0];
+            System.out.println("Barang terbawah : " + barangTerbawah.nama);
+            return barangTerbawah;
+        } else {
+            System.out.println("Tumpukan barang kosong.");
+            return null;
+        }
+    }
 }
