@@ -1,3 +1,5 @@
+// package Week_10.Praktikum_1;
+
 import java.util.Scanner;
 
 public class QueueMain {
