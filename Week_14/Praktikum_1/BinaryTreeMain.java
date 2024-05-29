@@ -1,4 +1,4 @@
-package Week_14;
+package Week_14.Praktikum_1;
 
 public class BinaryTreeMain {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Week_14;
+package Week_14.Praktikum_1;
 
 public class Node06 {
     int data;

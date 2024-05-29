@@ -1,4 +1,4 @@
-package Week_14;
+package Week_14.Praktikum_1;
 
 public class BinaryTree06 {
     Node06 root;
