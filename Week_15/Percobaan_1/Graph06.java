@@ -65,4 +65,13 @@ public class Graph06 {
         }
         System.out.println("");
     }
+
+    public boolean isAdjacent(int asal, int tujuan) {
+        for (int i = 0; i < list[asal].size(); i++) {
+            if (list[asal].get(i) == tujuan) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
